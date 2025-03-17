@@ -6,6 +6,22 @@
 pnpm install
 ```
 
+## Details
+
+```ts
+// lib/dist/index.js
+export { Button } from './Button';
+export { Button2 } from './Button2';
+```
+
+Button -> used
+Button2 -> unused
+
+
+## Rsbuild
+
+Button(js + css) + Button2(css)
+
 `website/dist/static/css/index.8f403a30.css`
 
 ```css
@@ -41,6 +57,10 @@ pnpm install
   display: inline-block;
 }
 ```
+
+## Vite
+
+Button(js + css)
 
 `website-vite/dist/assets/index-PEZszd6i.css`
 
