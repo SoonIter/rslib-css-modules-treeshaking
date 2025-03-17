@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     minify: false,
+    cssMinify: false,
+    rollupOptions: {
+      treeshake: 'safest',
+    }
   },
 });
